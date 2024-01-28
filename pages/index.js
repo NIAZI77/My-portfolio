@@ -123,7 +123,7 @@ Hi, I am Professional <b>full-stack web developer</b> with experience in modern 
 </p>
 </div>
  <div className="img">
- <Image src="/Portfolio.png" width={300} height={300} alt="Web Developer Portfolio Dynamic Websites | My Portfolio" />
+ <Image src="/portfolio.png" width={300} height={300} alt="Web Developer Portfolio Dynamic Websites | My Portfolio" />
 </div>
 </section>
  <div className="hr"></div>

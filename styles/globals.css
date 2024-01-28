@@ -17,9 +17,6 @@ html {
   background: var(--bg);
   user-select: none;
 }
-body main * {
-  overflow: hidden !important;
-}
 h3 {
   padding: 0 0 7px;
   font-size: 1.3em;
@@ -435,7 +432,7 @@ a,Link,button {
 .button:hover {
   color: var(--blue);
   scale: 1.1;
-  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  box-shadow: 0 0px 20px #617AFA77;
 }
 
 .button:active {
