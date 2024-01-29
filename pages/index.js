@@ -30,7 +30,7 @@ const Home = () => {
           links.forEach((link) => {
             link.classList.remove("indicate");
           });
-          document.querySelector("nav a[href='#" + id + "']").classList.add("indicate");
+          document.querySelector(`nav a[href="${process.env.NEXT_PUBLIC_HOST}#${id}`).classList.add("indicate");
         }
       });
     };
@@ -69,10 +69,10 @@ content="Web, developer, html, css, js, JavaScript, React, NextJs"
 "@context": "https://schema.org",
 "@type": "FundingAgency",
 "name": "My portfolio",
-"url": "/",
+"url": {process.env.NEXT_PUBLIC_HOST},
 "logo": "/favicon.ico",
 "sameAs": [
-"/",
+{process.env.NEXT_PUBLIC_HOST},
 "https://twitter.com/7T7NIAZI",
 "https://github.com/NIAZI77"
 ]
@@ -84,7 +84,7 @@ content="Web, developer, html, css, js, JavaScript, React, NextJs"
  <meta name="language" content="English" />
 <meta property="og:title" content="Niazi Portfolio" />
 <meta property="og:site_name" content="Portfolio" />
-<meta property="og:url" content="https://niazi.vercel.app" />
+<meta property="og:url" content={process.env.NEXT_PUBLIC_HOST} />
 <meta property="og:description" content="Explore the digital showcase of a talented web developer skilled in HTML, CSS, JavaScript, and Nextjs. Discover services." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="/favicon.ico" />
@@ -94,17 +94,17 @@ content="Web, developer, html, css, js, JavaScript, React, NextJs"
  <header>
  <nav>
  <div className="logo">
- <Link title="My Portfolio" href="/">
+ <Link title="My Portfolio" href={process.env.NEXT_PUBLIC_HOST}>
  <h1> PORTFOLIO</h1>
  </Link>
 </div>
  <div className="links">
  <div className="toggle"></div>
  <ul>
- <li><a title="My Portfolio" href="#home" className="indicate">Home</a></li>
- <li><a title="My Portfolio" href="#about">About</a></li>
- <li><a title="My Portfolio" href="#services">Services</a></li>
- <li><a title="My Portfolio" href="#contact">Contact</a></li>
+ <li><a title="My Portfolio" href={`${process.env.NEXT_PUBLIC_HOST}#home`} className="indicate">Home</a></li>
+ <li><a title="My Portfolio" href={`${process.env.NEXT_PUBLIC_HOST}#about`}>About</a></li>
+ <li><a title="My Portfolio" href={`${process.env.NEXT_PUBLIC_HOST}#services`}>Services</a></li>
+ <li><a title="My Portfolio" href={`${process.env.NEXT_PUBLIC_HOST}#contact`}>Contact</a></li>
 </ul>
 </div>
 </nav>
@@ -116,7 +116,7 @@ content="Web, developer, html, css, js, JavaScript, React, NextJs"
 Hi, I am Professional <b>full-stack web developer</b> with experience in modern frameworks.
 <br /><br />
  <Link target="_blank" href="https://www.fiverr.com/hamzaniazi0999">
- <button class="button">
+ <button className="button">
   Let's Work Together
 </button>
  </Link>
@@ -133,8 +133,7 @@ Hi, I am Professional <b>full-stack web developer</b> with experience in modern 
 </div>
  <div className="conten">
  <h2>About</h2>
- <p>Experienced professional full-stack web developer with a demonstrated history of working in the software development industry. Skilled in HTML, CSS, Javascript, ReactJs, NextJs, Tailwind Css, Bootstrap, MongoDB. Strong communication and problem-solving skills with a Bachelor's degree focused on Computer Science. Client satisfaction and providing professional service are my top priorities. I am confident that I can fulfill your expectations. Feel free to reach out with any questions.
-
+ <p>I have experience, as a web developer specializing in both Front-end and Back-end development. Throughout my career I have worked on software projects. Gained proficiency in HTML, CSS, Javascript, ReactJs, NextJs Tailwind Css, Bootstrap and MongoDB. My strong communication skills and ability to solve problems efficiently have contributed to my success, in this field. I hold a Bachelors degree in Computer Science. Prioritize client satisfaction while delivering services. If you have any inquiries or need information please don't hesitate to contact me.
 </p>
 </div>
 </section>
@@ -142,27 +141,38 @@ Hi, I am Professional <b>full-stack web developer</b> with experience in modern 
  <section id="services">
  <h2>Services</h2>
  <div className="service-box">
- <div className="box">
+  <div className="box">
  <div>
-<Image src="/design.svg" alt="Web Developer Portfolio Dynamic Websites | My Portfolio" height={60} width={60} />
+<Image src="/code.svg" alt="Web Developer Portfolio Dynamic Websites | My Portfolio" height={100} width={100} />
 </div>
  <div>
- <h3>Design</h3>
-<p>
-Beautiful, focused design that creates memorable, interactive digital experiences.
-</p>
-</div>
-</div>
- <div className="box">
- <div>
-<Image src="/code.svg" alt="Web Developer Portfolio Dynamic Websites | My Portfolio" height={60} width={60} />
-</div>
- <div>
- <h3>Code</h3>
+ <h3>web Development</h3>
  <p>
-Efficient, creative code for seamless user experiences. Precision in every line.
+I am a Full Stack Developer,have a proven track record of building web applications from the ground up.
 </p>
 
+</div>
+</div>
+ <div className="box">
+ <div>
+<Image src="/design.svg" alt="Web Developer Portfolio Dynamic Websites | My Portfolio" height={100} width={100} />
+</div>
+ <div>
+ <h3>UI/UX Design</h3>
+<p>
+Design visually appealing and user-friendly interfaces for websites, applications, and other digital platforms.
+</p>
+</div>
+</div>
+ <div className="box">
+ <div>
+<Image src="/desktop.svg" alt="Web Developer Portfolio Dynamic Websites | My Portfolio" height={100} width={100} />
+</div>
+ <div>
+ <h3>Responsive Design</h3>
+<p>
+Responsive web design is an approach to designing and building websites that ensure they look well on devices and screen sizes.
+</p>
 </div>
 </div>
 </div>
@@ -179,7 +189,7 @@ Efficient, creative code for seamless user experiences. Precision in every line.
  03168955487
 </div>
 </Link>
- <Link target="_blank" href="mailto:hamzaniazi0999@gmail.com" className="contact-box">
+ <Link target="_blank" href={`mailto:{process.env.MAIL}`} className="contact-box">
  <div className="icon">
 <Image src="/envelope.svg" alt="Web Developer Portfolio Dynamic Websites | My Portfolio" height={25} width={25} />
 </div>
@@ -200,7 +210,7 @@ Efficient, creative code for seamless user experiences. Precision in every line.
  </main>
  <footer>
  <div>
- © 2021 - <Link title="My Portfolio" href="/">
+ © 2021 - <Link title="My Portfolio" href={process.env.NEXT_PUBLIC_HOST}>
  PORTFOLIO
  </Link>
 </div>

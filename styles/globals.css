@@ -74,6 +74,9 @@ h3 {
   border-radius: 3px;
   background: var(--color);
 }
+nav ul li:hover {
+  color:var(--color);
+}
 main {
   width: 80vw;
   margin: auto;
@@ -82,7 +85,7 @@ main {
   overflow: visible;
 }
 .box {
-  height: 350px;
+  height: 400px;
   width: 250px;
   border: 2px solid var(--color);
   padding: 32px 16px;
@@ -162,9 +165,6 @@ main {
 .indicate {
   color: var(--color);
 }
-#services,#contact {
-  min-height: 45dvh;
-}
 #about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,6 +175,12 @@ main {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  flex-direction: column;
+}
+#contact,#services{
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
   flex-direction: column;
 }
 h2 {
