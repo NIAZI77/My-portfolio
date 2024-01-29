@@ -189,7 +189,7 @@ Responsive web design is an approach to designing and building websites that ens
  03168955487
 </div>
 </Link>
- <Link target="_blank" href={`mailto:{process.env.MAIL}`} className="contact-box">
+ <Link target="_blank" href={`mailto:{process.env.MAIL}`} className="contact-box"> 
  <div className="icon">
 <Image src="/envelope.svg" alt="Web Developer Portfolio Dynamic Websites | My Portfolio" height={25} width={25} />
 </div>
