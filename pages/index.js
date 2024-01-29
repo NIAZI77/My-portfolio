@@ -57,7 +57,7 @@ const Home = () => {
  <meta name="title" content="Web Developer Portfolio Dynamic Websites | My Portfolio" />
  <meta
   name="description"
-  content="Explore the digital showcase of a talented web developer skilled in HTML, CSS, JavaScript, and Nextjs. Discover services"
+  content="Explore the digital showcase of a talented Full-stack developer skilled in HTML, CSS, JavaScript, and Nextjs. Discover services"
   />
  <meta
 name="keywords"
@@ -85,7 +85,7 @@ content="Web, developer, html, css, js, JavaScript, React, NextJs"
 <meta property="og:title" content="Niazi Portfolio" />
 <meta property="og:site_name" content="Portfolio" />
 <meta property="og:url" content={process.env.NEXT_PUBLIC_HOST} />
-<meta property="og:description" content="Explore the digital showcase of a talented web developer skilled in HTML, CSS, JavaScript, and Nextjs. Discover services." />
+<meta property="og:description" content="Explore the digital showcase of a talented Full-stack developer skilled in HTML, CSS, JavaScript, and Nextjs. Discover services" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="/favicon.ico" />
 <link rel="canonical" href="niazi.vercel.app" />
