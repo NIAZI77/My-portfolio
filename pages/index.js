@@ -186,7 +186,7 @@ Responsive web design is an approach to designing and building websites that ens
 <Image src="/phone.svg" alt="Web Developer Portfolio Dynamic Websites | My Portfolio" height={25} width={25} />
 </div>
  <div>
- 03168955487
+ +923168955487
 </div>
 </Link>
  <Link target="_blank" href={`mailto:{process.env.MAIL}`} className="contact-box"> 
@@ -202,7 +202,7 @@ Responsive web design is an approach to designing and building websites that ens
 <Image src="/whatsapp.svg" alt="Web Developer Portfolio Dynamic Websites | My Portfolio" height={35} width={35} />
 </div>
  <div>
- 03168955487
+ +923168955487
 </div>
 </Link>
 </div>
