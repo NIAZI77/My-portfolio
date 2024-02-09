@@ -88,7 +88,7 @@ content="Web, developer, html, css, js, JavaScript, React, NextJs"
 <meta property="og:description" content="Explore the digital showcase of a talented Full-stack developer skilled in HTML, CSS, JavaScript, and Nextjs. Discover services" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="/favicon.ico" />
-<link rel="canonical" href="niazi.vercel.app" />
+<link rel="canonical" href={process.env.NEXT_PUBLIC_HOST} />
  </Head>
 <div>
  <header>
