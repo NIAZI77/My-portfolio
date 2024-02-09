@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.niazi.vercel.app [NC]
+RewriteRule ^(.*)$ http://niazi.vercel.app/$1 [L,R=301]
