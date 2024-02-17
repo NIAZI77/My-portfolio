@@ -181,7 +181,7 @@ Responsive web design is an approach to designing and building websites that ens
  <section id="contact">
  <h2>Contact</h2>
  <div id="con-box">
- <Link target="_blank" href="tel:+923168955487" className="contact-box">
+ <Link target="_blank" href="tel:+923168955487" className="contact-box text-sm">
  <div className="icon">
 <Image src="/phone.svg" alt="Web Developer Portfolio Dynamic Websites | My Portfolio" height={25} width={25} />
 </div>
@@ -189,7 +189,7 @@ Responsive web design is an approach to designing and building websites that ens
  +923168955487
 </div>
 </Link>
- <Link target="_blank" href={`mailto:{process.env.MAIL}`} className="contact-box"> 
+ <Link target="_blank" href={`mailto:{process.env.MAIL}`} className="contact-box text-sm"> 
  <div className="icon">
 <Image src="/envelope.svg" alt="Web Developer Portfolio Dynamic Websites | My Portfolio" height={25} width={25} />
 </div>
@@ -197,7 +197,7 @@ Responsive web design is an approach to designing and building websites that ens
  info@my.com
 </div>
 </Link>
- <Link target="_blank" href="https://wa.me/+923168955487" className="contact-box">
+ <Link target="_blank" href="https://wa.me/+923168955487" className="contact-box text-sm">
  <div className="icon">
 <Image src="/whatsapp.svg" alt="Web Developer Portfolio Dynamic Websites | My Portfolio" height={35} width={35} />
 </div>
