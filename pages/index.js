@@ -59,7 +59,7 @@ const Home = () => {
   name="description"
   content="Explore the digital showcase of a talented Full-stack developer skilled in HTML, CSS, JavaScript, and Nextjs. Discover services"
   />
-    <!-- Google tag (gtag.js) -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XW4BR6BJV3"></script>
 <script>
     {`
