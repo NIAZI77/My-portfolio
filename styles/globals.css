@@ -329,7 +329,6 @@ a,Link,button {
 @media(min-width: 767px) {
   section {
     padding: 100px 0;
-    min-height: 100dvh;
   }
   nav {
     -ms-flex-pack: distribute;
